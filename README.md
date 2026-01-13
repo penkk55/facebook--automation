@@ -26,5 +26,44 @@ The automation is built around a reusable class that:
 
 ---
 
-## Project Structure
+
+## Setup & Run (macOS)
+
+### Prerequisites
+- macOS
+- Python 3.9+
+- Android Studio + Android Emulator
+- `adb` available in PATH
+- Virtual environment already created (`venv/`)
+
+##  for checking device connection
+```
+adb devices
+```
+
+---
+
+### 1. Activate Virtual Environment
+Activate the Python virtual environment before installing dependencies.
+
+```bash
+source venv/bin/activate
+```
+
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+# For OpenAI
+export OPENAI_API_KEY=your-api-key-here 
+
+### 3. Run the Automation
+```bash
+python main.py
+```
+
+
+
+
 
